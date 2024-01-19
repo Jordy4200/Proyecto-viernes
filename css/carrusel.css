@@ -1,0 +1,24 @@
+.hero {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    backface-visibility: hidden;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	
+	@media screen and (min-width:640px) {
+		background-position: 30% 0;
+	}
+
+	&:after {
+		bottom: 0;
+		content: '';
+		left: -2000%;
+		position: absolute;
+		right: -2000%;
+		top: 0;
+		z-index: 1;
+	}
+}
